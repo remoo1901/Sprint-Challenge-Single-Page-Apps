@@ -2,6 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import SearchForm from "./SearchForm";
+import styled from "styled-components";
+import './CharacterList.css';
+
+const CharDiv = styled.section`
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-top: 15px;
+`;
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -34,11 +45,8 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <SearchForm
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
-      <div>
+      <SearchForm handleChange={handleChange} handleSubmit={handleSubmit} />
+      <CharDiv>
         {char.map(character => (
           <CharacterCard
             key={character.id}
@@ -48,7 +56,7 @@ export default function CharacterList() {
             species={character.species}
           />
         ))}
-      </div>
+      </CharDiv>
     </section>
   );
 }
