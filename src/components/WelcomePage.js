@@ -17,7 +17,7 @@ const H1 = styled.h1`
 `;
 
 const Section = styled.section`
-  background-color: gray;
+  background-color: black;
 
   height: 190%;
 `;

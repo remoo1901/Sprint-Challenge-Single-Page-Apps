@@ -3,11 +3,10 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import SearchForm from "./SearchForm";
 import styled from "styled-components";
-import './CharacterList.css';
+import "./CharacterList.css";
 
 const CharDiv = styled.section`
   display: flex;
-  
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 100%;

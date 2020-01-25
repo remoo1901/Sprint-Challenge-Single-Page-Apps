@@ -4,27 +4,35 @@ import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList.js";
 import WelcomePage from "./components/WelcomePage";
 import SearchForm from "./components/SearchForm";
-import styled from "styled-components"
+import styled from "styled-components";
+import "./index.css"
 
 
-const Main = styled.main `
-background-color: gray;
+const Main = styled.main`
+  background-color: black;
+`;
+
+const Nav = styled.nav`
+margin-left: 430px;
+text-decoration: none;
 `
 
 export default function App() {
   return (
     <Main>
       <Header />
-      <SearchForm/>
-      <Link className="" exact to="/">
-        Home
-      </Link>
-      <Link className="" exact to="/CharacterList">
-        Characters 
-      </Link>
+      <SearchForm />
+      <Nav>
+        <Link className="home-link" exact to="/">
+          Home
+        </Link>
+
+        <Link className="char-link" exact to="/CharacterList">
+          Characters
+        </Link>
+      </Nav>
       <Route exact path="/" component={WelcomePage} />
       <Route exact path="/CharacterList" component={CharacterList} />
-      
     </Main>
   );
 }

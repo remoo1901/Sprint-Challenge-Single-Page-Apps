@@ -5,7 +5,7 @@ import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
 const Wrapper = styled.div`
   background-color: white;
   max-width: 350px;
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 6px 0 white, 0 2px 10px 0 white;
   margin-bottom: 12px;
 `;
 
