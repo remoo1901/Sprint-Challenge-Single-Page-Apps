@@ -5,17 +5,17 @@ import CharacterList from "./components/CharacterList.js";
 import WelcomePage from "./components/WelcomePage";
 import SearchForm from "./components/SearchForm";
 import styled from "styled-components";
-import "./index.css"
-
+import "./index.css";
 
 const Main = styled.main`
   background-color: black;
 `;
 
 const Nav = styled.nav`
-margin-left: 430px;
-text-decoration: none;
-`
+  margin-left: 400px;
+  text-decoration: none;
+  margin-bottom: 10px;
+`;
 
 export default function App() {
   return (

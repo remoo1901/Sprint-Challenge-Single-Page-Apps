@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Img = styled.img`
-  margin-left: 130px;
+  margin-left: 210px;
   box-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em orange;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -12,7 +12,7 @@ const Img = styled.img`
 
 const H1 = styled.h1`
   color: black;
-  font-size: 45px;
+  font-size: 35px;
   text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em orange;
 `;
 

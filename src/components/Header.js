@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const H1 = styled.h1 `
 text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em orange;
+font-size: 45px;
 `
 
 export default function Header() {

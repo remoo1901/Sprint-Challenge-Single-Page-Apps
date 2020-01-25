@@ -37,14 +37,17 @@ export default function CharacterList() {
     setSearch(e.target.value);
   };
 
-  const handleSubmit = e => {
+  /*const handleSubmit = e => {
     e.preventDefault();
     alert(`submit: ${search}`);
   };
+  handleSubmit={handleSubmit}
+  
+  */
 
   return (
     <section className="character-list">
-      <SearchForm handleChange={handleChange} handleSubmit={handleSubmit} />
+      <SearchForm handleChange={handleChange} />
       <CharDiv>
         {char.map(character => (
           <CharacterCard

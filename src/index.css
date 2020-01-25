@@ -41,11 +41,13 @@ header h1 {
 .home-link{
   padding: 15px;
   text-decoration: none;
- 
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em orange;
+  font-size: 25px;
 }
 
 .char-link{
   padding: 15px;
   text-decoration: none;
- 
+  text-shadow: 1px 1px 2px whitesmoke, 0 0 1em white, 0 0 0.2em orange;
+  font-size: 25px;
 }

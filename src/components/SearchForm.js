@@ -1,20 +1,25 @@
 import React from "react";
+import styled from "styled-components";
+import "./SearchForm.css"
 
+const Section = styled.section`
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em orange;
+  font-size: 15px;
+`;
 
-export default function SearchForm(props) {
+export default function SearchForm({search,handleChange}) {
   return (
-    <section className="search-form">
-      <form >
-        <label htmlFor="search">Search</label>
-        <input
-          name="search1"
-          type="search"
-          onChange={props.handleChange}
-          value={props.search}
+    <Section className="wrap">
+      <form className="search">
+        <input className="searchTerm"
+          name="search"
+          type="text"
+          onChange={handleChange}
+          value={search}
           placeholder="search"
         />
-        <button type="submit">Submit Info1</button>
+        <button className="searchButton">Go</button>
       </form>
-    </section>
+    </Section>
   );
 }
