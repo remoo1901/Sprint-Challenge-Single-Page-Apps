@@ -12,8 +12,9 @@ const Img = styled.img`
 
 const H1 = styled.h1`
   color: black;
-  font-size: 35px;
-  text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em orange;
+  font-size: 30px;
+  color: black;
+  text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
 `;
 
 const Section = styled.section`

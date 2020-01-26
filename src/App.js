@@ -23,13 +23,15 @@ export default function App() {
       <Header />
       <SearchForm />
       <Nav>
-        <Link className="home-link" exact to="/">
+      <hr/>
+        <Link className="home-link" to="/">
           Home
         </Link>
 
-        <Link className="char-link" exact to="/CharacterList">
+        <Link className="char-link" to="/CharacterList">
           Characters
         </Link>
+        <hr/>
       </Nav>
       <Route exact path="/" component={WelcomePage} />
       <Route exact path="/CharacterList" component={CharacterList} />

@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components"
 
 const H1 = styled.h1 `
-text-shadow: 1px 1px 2px red, 0 0 1em orange, 0 0 0.2em orange;
+color: rgb(255, 255, 255);
+  text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
 font-size: 45px;
 `
 
