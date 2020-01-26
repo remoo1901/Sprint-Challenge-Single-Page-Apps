@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
-import SearchForm from "./SearchForm";
 import styled from "styled-components";
 import "./CharacterList.css";
 
@@ -12,6 +11,8 @@ const CharDiv = styled.section`
   max-width: 100%;
   margin-top: 15px;
 `;
+
+
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -37,25 +38,31 @@ export default function CharacterList() {
     setSearch(e.target.value);
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    alert(`submit: ${search}`);
-  };
-
   return (
     <section className="character-list">
-      <SearchForm
-        placeholder="Search characters"
-        value={search}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
+      <form className="search">
+        <input
+          className="searchTerm"
+          id="name"
+          type="text"
+          name="textfield"
+          placeholder="Search"
+          value={search}
+          onChange={handleChange}
+        />
+        <button type="submit" className="searchButton">
+          Go
+        </button>
+       
+      </form>
+
       <CharDiv>
         {char.map(character => (
           <CharacterCard
             key={character.id}
             image={character.image}
             name={character.name}
+            gender={character.gender}
             status={character.status}
             species={character.species}
           />

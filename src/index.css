@@ -45,6 +45,8 @@ header h1 {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
   font-size: 25px;
+  margin-left: -20px;
+  
 }
 
 .char-link{
@@ -53,11 +55,13 @@ header h1 {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
   font-size: 25px;
+  margin-right: 20px;
+  
 }
 
 hr {
 width: 250px;
-margin-right: 380px;
+margin-left: -23px;
 box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
 }
